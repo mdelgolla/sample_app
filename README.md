@@ -3,10 +3,10 @@ A new Flutter project.
 
 ## Getting Started (Command Promt)
 Step 1: Open Git Bash or Terminal and go to the folder you want to clone the project using <cd> commands <br />
-Step 2: Open the flutter project you want to clone
-Step 3: Copy the URL and open Git bash to clone the repository 
-Step 4: Type git clone URL to clone the repository and the URL is
-  git clone https://github.com/mdelgolla/sample_app.git
+Step 2: Open the flutter project you want to clone <br />
+Step 3: Copy the URL and open Git bash to clone the repository <br />
+Step 4: Type git clone URL to clone the repository and the URL is <br />
+  git clone https://github.com/mdelgolla/sample_app.git <br />
 Step 5:  The repository will be successfully cloned in to your selected direcotry. You can import it into any folder which you want. Onece you successfully go throug these steps you have successfully imported a flutter project into our working girectory.
   
 ## BLOC Pattern
