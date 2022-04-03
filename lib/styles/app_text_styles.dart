@@ -23,6 +23,27 @@ extension AppTextStyles on TextTheme {
       fontWeight: FontWeight.bold,
     );
   }
+  TextStyle get heading {
+    return const TextStyle(
+      fontSize: 20.0,
+      color: AppColors.grey,
+      fontWeight: FontWeight.bold,
+    );
+  }
+  TextStyle get keyTextStyle {
+    return const TextStyle(
+      fontSize: 18.0,
+      color: AppColors.grey,
+      fontWeight: FontWeight.w600,
+    );
+  }
+  TextStyle get valueTextStyle {
+    return const TextStyle(
+      fontSize: 18.0,
+      color: AppColors.grey,
+      fontWeight: FontWeight.normal,
+    );
+  }
   TextStyle get normalTextStyle{
     return const TextStyle(
       fontSize: 15.0,

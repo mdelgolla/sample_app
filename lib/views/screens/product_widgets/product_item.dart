@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:sample_app/models/product.dart';
 import 'package:sample_app/routes.dart';
 import 'package:sample_app/styles/app_colors.dart';
+import 'package:sample_app/styles/app_text_styles.dart';
 
 class ProductItem extends StatelessWidget {
  final Product product;
@@ -32,7 +33,7 @@ class ProductItem extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
                   children: [
-                    Text(product.model ?? ""),
+                    Text(product.model ?? "",style: Theme.of(context).textTheme.categoryHeading,),
                     const Spacer(),
                     const Icon(
                       Icons.favorite,

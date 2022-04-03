@@ -43,10 +43,12 @@ class CategoryItem extends StatelessWidget {
                   _getImageIcon(categoryType),
                   height: 30,
                   width: 30,
+                  color: Colors.white,
                 ),
                 const Spacer(),
                 Text(
-                    "${category![0].toUpperCase()}${category!.substring(1).toLowerCase()}")
+                    "${category![0].toUpperCase()}${category!.substring(1).toLowerCase()}",style: const TextStyle(color:Colors.white,),),
+                const SizedBox(width: 10,),
               ],
             ),
           ),

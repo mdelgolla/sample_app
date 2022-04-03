@@ -7,7 +7,7 @@ import 'package:sample_app/models/product.dart';
 import 'package:sample_app/routes.dart';
 import 'package:sample_app/styles/app_colors.dart';
 import 'package:sample_app/views/common_widgets/common_button.dart';
-
+import 'package:sample_app/styles/app_text_styles.dart';
 class ProductDetailView extends StatefulWidget {
   final Product product;
 
@@ -136,6 +136,7 @@ class _ProductDetailViewState extends State<ProductDetailView> {
                     Text(
                       widget.product.model ?? "",
                       textAlign: TextAlign.start,
+                      style: Theme.of(context).textTheme.heading,
                     ),
                     _bottomSheetItem("Brand", widget.product.brand ?? ""),
                     _bottomSheetItem(
@@ -170,7 +171,7 @@ class _ProductDetailViewState extends State<ProductDetailView> {
 
   Widget _bottomSheetItem(String name, String value) {
     return Row(
-      children: [Text(name), Spacer(), Text(value)],
+      children: [Text(name,style: Theme.of(context).textTheme.keyTextStyle,), const Spacer(), Text(value,style: Theme.of(context).textTheme.valueTextStyle,)],
     );
   }
 
